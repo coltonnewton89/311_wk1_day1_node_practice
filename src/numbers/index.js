@@ -4,7 +4,7 @@ const isEven = (num) => {
   }
 
 }
-
+//yay;
 const sum = (arr) => {
   if (!Array.isArray(arr)) return;
   let totalNumber = 0;
