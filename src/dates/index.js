@@ -2,19 +2,16 @@
 const moment = require('moment')
 // using moment to find current day
 const today = () => {
-  var today = new Date();
-  console.log(today);
+  return moment().format('dddd');
 
 }
 
 const calendar = () => {
-  let jack = Date.calendar();
-  console.log(jack);
+  return moment().format('MMM DD, YYYY');
 }
 
 const currentTime = () => {
-  let cTime = Dates.currentTime();
-  console.log(cTime);
+  return moment().format('hh:mm:ss A');
 }
 
 module.exports = {

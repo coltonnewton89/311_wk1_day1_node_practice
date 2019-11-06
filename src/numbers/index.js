@@ -6,15 +6,31 @@ const isEven = (num) => {
 }
 
 const sum = (arr) => {
-  const arrSum = arr => arr.reduce((a, b) => a + b, 0);
-  console.log(arrSum);
+  if (!Array.isArray(arr)) return;
+  let totalNumber = 0;
+  for (let i = 0, l = arr.length; i < l; i++) {
+    totalNumber += arr[i];
+  }
+  return totalNumber;
+
 
 }
 
 const comboSum = (arr, sum) => {
-  // write code for numbers.comboSum
-
+  let newNumber = 0;
+  for (i = 0; i < arr.length; i++) {
+    for (j = 0; j < arr.length; j++) {
+      if (i !== j) {
+        newNum = arr[i] + arr[j]
+      }
+      if (newNumber === sum) {
+        return true;
+      } else return false;
+    }
+  }
 }
+
+
 
 module.exports = {
   isEven,
