@@ -17,15 +17,11 @@ const sum = (arr) => {
 }
 
 const comboSum = (arr, sum) => {
-  let newNumber = 0;
   for (i = 0; i < arr.length; i++) {
-    for (j = 0; j < arr.length; j++) {
-      if (i !== j) {
-        newNum = arr[i] + arr[j]
+    for (n = 0; n < arr.length; n++) {
+      if ((arr[i] + arr[n] == sum) && (i != n)) {
+        return true
       }
-      if (newNumber === sum) {
-        return true;
-      } else return false;
     }
   }
 }
@@ -37,3 +33,7 @@ module.exports = {
   sum,
   comboSum
 }
+
+
+let arr = [1, 2, 3, 8, 21]
+console.log(comboSum(arr, 10));
