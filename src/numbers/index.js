@@ -1,10 +1,12 @@
 const isEven = (num) => {
-  // write code for numbers.isEven
+  if (num % 2 == 0) {
+    return true;
+  }
 
 }
 
 const sum = (arr) => {
-  // write code for numbers.sum
+  const arrSum = arr => arr.reduce((a, b) => a + b, 0);
 
 }
 

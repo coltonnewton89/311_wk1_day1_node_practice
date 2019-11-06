@@ -1,18 +1,20 @@
 // import moment here; use this package in each function
-
+const moment = require('moment')
+// using moment to find current day
 const today = () => {
-  // write code for dates.today
+  var today = new Date();
+  console.log(today);
 
 }
 
 const calendar = () => {
-  // write code for dates.calendar
-
+  let jack = Date.calendar();
+  console.log(jack);
 }
 
 const currentTime = () => {
-  // write code for dates.currentTime
-
+  let cTime = Dates.currentTime();
+  console.log(cTime);
 }
 
 module.exports = {
