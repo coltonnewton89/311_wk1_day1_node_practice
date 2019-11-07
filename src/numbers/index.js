@@ -17,13 +17,13 @@ const sum = (arr) => {
 }
 
 const comboSum = (arr, sum) => {
-  for (i = 0; i < arr.length; i++) {
-    for (n = 0; n < arr.length; n++) {
-      if ((arr[i] + arr[n] == sum) && (i != n)) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let n = 0; n < arr.length; n++) {
+      if (arr[i] + arr[n] == sum && i != n) {
         return true
       }
     }
-  }
+  } return false
 }
 
 
